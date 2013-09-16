@@ -25,3 +25,6 @@ proguard-project.txt
 
 #Support-Lib 
 android-support-v4.jar
+sample/build
+library/build
+.gradle
