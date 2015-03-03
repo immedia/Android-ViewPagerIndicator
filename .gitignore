@@ -28,3 +28,4 @@ android-support-v4.jar
 sample/build
 library/build
 .gradle
+model_data.bin
