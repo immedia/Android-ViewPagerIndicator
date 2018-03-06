@@ -5,12 +5,12 @@ repositories {
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:22.1.1'
+    compile 'com.android.support:support-v4:26.1.0'
 }
 
 android {
-    compileSdkVersion 16
-    buildToolsVersion "21.1.2"
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
     sourceSets {
         main {
             manifest.srcFile 'AndroidManifest.xml'
@@ -18,8 +18,7 @@ android {
             res.srcDirs = ['res']
         }
     }
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_7
-        targetCompatibility JavaVersion.VERSION_1_7
+    defaultConfig {
+        minSdkVersion 15
     }
 }

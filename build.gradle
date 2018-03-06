@@ -4,7 +4,11 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:1.1.0'
+        def isRootProject = rootProject == project
+        if (isRootProject) {
+            classpath 'com.android.tools.build:gradle:3.0.1'
+            // + other dependencies
+        }
     }
 
 
