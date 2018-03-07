@@ -1,16 +1,17 @@
 buildscript {
     repositories {
         mavenCentral()
+        google()
     }
 
     dependencies {
-        def isRootProject = rootProject == project
-        if (isRootProject) {
-            classpath 'com.android.tools.build:gradle:3.0.1'
-            // + other dependencies
-        }
+        classpath 'com.android.tools.build:gradle:3.0.1'
     }
 
 
 }
 
+
+repositories {
+    google()
+}

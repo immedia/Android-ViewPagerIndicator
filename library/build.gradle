@@ -1,16 +1,20 @@
 apply plugin: 'com.android.library'
 
 repositories {
+    google()
     mavenCentral()
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:26.1.0'
+    compile 'com.android.support:support-v4:27.1.0'
 }
 
 android {
     compileSdkVersion 26
-    buildToolsVersion '26.0.2'
+    buildToolsVersion "26.0.2"
+    defaultConfig {
+        minSdkVersion 14
+    }
     sourceSets {
         main {
             manifest.srcFile 'AndroidManifest.xml'
@@ -18,7 +22,9 @@ android {
             res.srcDirs = ['res']
         }
     }
-    defaultConfig {
-        minSdkVersion 15
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
     }
 }
+
